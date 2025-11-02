@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "builds": [
+    {
+      "src": "src/app/**",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/" }
+  ],
+  "functions": {
+    "src/app/api/**/*": {
+      "maxDuration": 10
+    }
+  },
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
