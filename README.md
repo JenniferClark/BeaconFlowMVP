@@ -37,3 +37,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Roadmap
 Roadmap: [docs/roadmap/INDEX.md](./docs/roadmap/INDEX.md)
+
+## Local Setup
+1. Copy `.env.example` → `.env.local`
+2. Run `docker run -p 5080:5080 openobserve/openobserve`
+3. `npm run dev`
